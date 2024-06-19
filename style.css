@@ -1,0 +1,76 @@
+/* Apply box-sizing to all elements */
+* {
+  box-sizing: border-box;
+}
+
+/* Remove default focus outline */
+:focus {
+  outline: none;
+}
+
+/* Style the body with a background gradient and centering content */
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to right, #ffecd2, #fcb69f);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+/* Style the input element */
+input {
+  font-size: 16px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 300px;
+}
+
+/* Container for the search input and suggestions */
+.search-container {
+  position: relative;
+}
+
+/* Set width for input and suggestions container */
+.search-container input,
+.search-container .suggestions {
+  width: 300px;
+}
+
+/* Style the suggestions container */
+.search-container .suggestions {
+  position: absolute;
+  top: 40px;
+  border: 1px solid #ccc;
+  border-top: none;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  background-color: white;
+  z-index: 1000;
+}
+
+/* Remove default padding and margin for lists */
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* Show suggestions when available */
+ul.has-suggestions {
+  display: block;
+}
+
+/* Style suggestion items */
+ul li {
+  padding: 10px;
+  cursor: pointer;
+}
+
+/* Highlight suggestion on hover */
+ul li:hover {
+  background-color: #d3d3d3;
+}
